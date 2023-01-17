@@ -1,0 +1,355 @@
+form {
+  display: flex;
+  flex-grow: 3;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+
+  &__container {
+    padding: 33px 15px 57px;
+  }
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  height: 35px;
+
+  background-image: url(../../img/logo.png);
+  background-repeat: no-repeat;
+}
+
+.search__label {
+  position: relative;
+  flex-grow: 3;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 23px;
+    height: 23px;
+    background: url(/img/search.svg) 50%/contain no-repeat;
+    transform: translateY(-50%);
+  }
+}
+
+.search__label__bar {
+  width: 100%;
+  padding: 6px 15px 8px;
+
+  background-color: #837f7f;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  
+  &:focus {
+    outline: none;
+  }
+  
+  &::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #222222
+}
+
+/* Dropdown */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dd-button {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 37px;
+  height: 36px;
+
+  border-radius: 10px;
+  background-color: #837F7F;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button:after {
+  content: '';
+  // position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  background-image: url(../../img/filter.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.dd-button:hover {
+  background-color: #928d8d;
+}
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+
+  margin-top: 7px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  background-color: #837F7F;
+  border-radius: 10px;
+
+  list-style-type: none;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+} 
+
+.dd-input:checked + .dd-menu {
+  display: block;
+} 
+
+.dd-menu li {
+  padding: 8px 15px;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #837F7F;
+  border-radius: 10px;
+}
+
+.dd-menu li:hover {
+  background-color: #928d8d;
+}
+
+.dd-menu li a {
+  display: block;
+}
+
+input {
+  border: none;
+}
+
+// Price
+
+.dd {
+  display: inline-block;
+  position: relative;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.dd__buton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 190px;
+  height: 36px;
+
+  padding: 0 18px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+
+  border-radius: 10px;
+  background-color: #837F7F;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: #928d8d;
+  }
+
+  &-name {
+    background-color: transparent;
+  }
+
+  &-arrow {
+    width: 16px;
+    height: 7px;
+
+    background-color: transparent;
+    background-image: url(../../img/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &--active {
+      background-color: transparent;
+      background-image: url(../../img/arrow-up.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.dd__button:after {
+  content: '';
+  // position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // background-image: url(../../img/filter.svg);
+  // background-repeat: no-repeat;
+  // background-size: contain;
+}
+
+.dd__button:hover {
+  background-color: #928d8d;
+}
+
+.dd__input {
+  display: none;
+}
+
+.dd__menu {
+  position: absolute;
+  top: 100%;
+  width: 190px;
+
+  margin-top: 7px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  background-color: #837F7F;
+  border-radius: 10px;
+
+  list-style-type: none;
+}
+
+.dd__input + .dd__menu {
+  display: none;
+} 
+
+.dd__input:checked + .dd__menu {
+  display: block;
+} 
+
+.dd__menu li {
+  padding: 8px 15px;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #837F7F;
+  border-radius: 10px;
+}
+
+.dd__menu li:hover {
+  background-color: #928d8d;
+}
+
+.dd__menu li a {
+  display: block;
+}
+
+.dd__pictures {
+  display: flex;
+  flex-direction: column;
+  &-price {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url(../../img/group-by-price.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-date {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url(../../img/filter-by-date.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+// .side-buttons {
+//   display: flex;
+// }
+
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 37px;
+  border-radius: 10px;
+  
+  white-space: nowrap;
+  background: #837F7F;
+}
+
+.side-buttons .button {
+  background-color: #837F7F; /* Green background */
+  color: #fff; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.side-buttons:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.side-buttons .button:hover {
+  background-color: #928d8d;
+}
+
+.search {
+  border-radius: 50px 0 0 50px;
+}
+
+.like-list {
+  border-radius: 0 50px 50px 0;
+}
+
+button {
+  border: 0;
+}
