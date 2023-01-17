@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 const Global = createGlobalStyle`
 * {
@@ -16,13 +16,14 @@ const Global = createGlobalStyle`
 `;
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById('root') as HTMLElement,
 );
+
 root.render(
   <>
     <Global />
     <App />
-  </>
+  </>,
 );
 
 reportWebVitals();
