@@ -10,7 +10,6 @@ const Global = createGlobalStyle`
   margin: 0;
   box-sizing: border-box;
   font-family: 'Inter';
-  background-color: #171A21;
   color: #fff;
 }
 `;
