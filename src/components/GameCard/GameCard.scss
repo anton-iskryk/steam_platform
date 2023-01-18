@@ -1,0 +1,94 @@
+@import '../../utilsForScss/colors.scss';
+@import '../../utilsForScss/mixins.scss';
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  width: 262px;
+  height: 212px;
+
+  background: #17323A;
+  border-radius: 10px;
+
+  &__img-container {
+    display: flex;
+    justify-content: center;
+
+    width: 263px;
+    height: 99px;
+
+    margin-bottom: 6px;
+  }
+
+  &__img {
+    width: 263px;
+    height: 99px;
+   
+    border-radius: 10px;
+  }
+
+  &__description {
+    padding: 10px;
+  }
+
+  &__title {
+    margin-bottom: 6px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+  }
+
+  &__date {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  &__price {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+  }
+
+  &__favorites-icon {
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+
+    background-color: #17323A;
+    background-image: url('../../img/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &--active {
+      background-color: #17323A;
+
+      background-image: url('../../img/fav-active.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
