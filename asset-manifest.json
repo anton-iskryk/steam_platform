@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/steam_platform/static/css/main.21f85eac.css",
-    "main.js": "/steam_platform/static/js/main.47b82f32.js",
+    "main.css": "/steam_platform/static/css/main.54bbb6b3.css",
+    "main.js": "/steam_platform/static/js/main.947aab75.js",
     "static/js/787.1600bd46.chunk.js": "/steam_platform/static/js/787.1600bd46.chunk.js",
+    "static/media/card-image.png": "/steam_platform/static/media/card-image.d35a42ba1c3479f91131.png",
     "static/media/filter.svg": "/steam_platform/static/media/filter.b2b01f8cbf9cfbf70cfc.svg",
     "static/media/filter-by-date.svg": "/steam_platform/static/media/filter-by-date.5e94f3ad086e72e93ed6.svg",
+    "static/media/Vector.svg": "/steam_platform/static/media/Vector.f4d9df42cad2a451530f.svg",
     "static/media/search.svg": "/steam_platform/static/media/search.080f6006152a3405ba68.svg",
     "static/media/group-by-price.svg": "/steam_platform/static/media/group-by-price.10e874ce2d46e386f348.svg",
     "index.html": "/steam_platform/index.html",
     "static/media/arrow-down.svg": "/steam_platform/static/media/arrow-down.efd53a371c67f971548f.svg",
     "static/media/arrow-up.svg": "/steam_platform/static/media/arrow-up.cf0edabf8e5c19326e04.svg",
-    "main.21f85eac.css.map": "/steam_platform/static/css/main.21f85eac.css.map",
-    "main.47b82f32.js.map": "/steam_platform/static/js/main.47b82f32.js.map",
+    "static/media/fav-active.svg": "/steam_platform/static/media/fav-active.835f843858e6d0fa13f7.svg",
+    "main.54bbb6b3.css.map": "/steam_platform/static/css/main.54bbb6b3.css.map",
+    "main.947aab75.js.map": "/steam_platform/static/js/main.947aab75.js.map",
     "787.1600bd46.chunk.js.map": "/steam_platform/static/js/787.1600bd46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21f85eac.css",
-    "static/js/main.47b82f32.js"
+    "static/css/main.54bbb6b3.css",
+    "static/js/main.947aab75.js"
   ]
 }
