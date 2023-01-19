@@ -24,12 +24,12 @@ export const Header: React.FC = () => {
         </label>
       </form>
 
-      <label className="dropdown">
-        <div className="dd-button"></div>
+      <label className="filter">
+        <div className="filter-button"></div>
 
-        <input type="checkbox" className="dd-input" id="test"/>
+        <input type="checkbox" className="filter-input" id="test"/>
 
-        <ul className='dd-menu'>
+        <ul className='filter-menu'>
           <li>Lower to bigger</li>
           <li>Bigger to lower</li>
         </ul>
